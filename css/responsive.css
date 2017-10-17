@@ -1,0 +1,125 @@
+@media screen and (max-width: 1600px){
+	.try__input,
+	.try__button{
+		width: 210px;
+	}
+}
+
+@media screen and (max-width: 1259px){
+	.trial__30 h2{
+		font-size: 12px;
+	}
+	.try__input,
+	.try__button{
+		width: 170px;
+	}
+	.s3__img {
+		width: 100%;
+		height: auto;
+	}
+	.f__ul {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.xs__logo a{
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 50%;
+		width: 103px;
+		height: 50px;
+	}
+	.header__nav{
+		padding: 0;
+	}
+	.header__nav,
+	input.toggle{
+		display: none;
+	}
+	input[type=checkbox]:checked ~ .header__nav,
+	label.toggle,
+	.header__li{
+		display: table-row;
+		cursor: pointer;
+	}
+	.header:before{
+		content: none;
+	}
+	.header__ul:after{
+		content: none;
+	}
+	.header__li a{
+		margin: 5% 0;
+	}
+	.user__icon img{
+		top: 0;
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-moz-transform: translateY(0);
+	}
+	.s1__container{
+		padding-right: 15%;
+	}
+	.s3__img {
+		width: 90%;
+	}
+	.clients{
+		background-size: auto;
+		background-repeat: repeat;
+	}
+	.contact__ul {
+		text-align: center;
+	}
+	.contact__ul li{
+		margin: 0 0 10px 0;
+	}
+	.try__input,
+	.try__button{
+		width: 370px;
+	}
+	.trial__30 h2 {
+		font-size: 16px;
+	}
+	.subscribe__input {
+		width: 39%;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.user__icon{
+		right: -30px;
+	}
+	.hero-baner{
+		padding: 0 15%;
+	}
+	.hero__info {
+		color: rgba(255, 255, 255, 0.76);
+		font-weight: 500;
+	}	
+	.s2__container{
+		padding: 0 15%;
+	}
+	.s3__content{
+		height: 290px;
+	}
+	.subscribe__input{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 575px){ 
+	.s1__container{
+		padding-right: 0;
+	}
+	.s3{
+		padding: 0 3%;
+	}
+	.try__input,
+	.try__button{
+		width: 270px;
+	}
+}
