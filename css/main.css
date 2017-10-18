@@ -16,7 +16,8 @@ header{
 	left: 1.5em;
 }
 
-.header__nav{
+.header__nav,
+.header__image{
 	height: 57px;
 	line-height: 57px;
 }
@@ -74,9 +75,7 @@ label.toggle{
 label.toggle{
 	padding: 0;
 	margin: 0;
-	font-size: 32px;
-	position: relative;
-	
+	position: relative;	
 }
 
 .user__icon{
@@ -85,16 +84,21 @@ label.toggle{
 	display: inline-block;
 }
 
+.user__img_h2{
+	display: none;
+}
+
 .user__menu{
 	position: absolute;
 	list-style: none;
-	border-bottom: 3px solid #ff6d6d;
 	z-index: 999;
 	display: none;
 	right: 0;
 	padding: 0;
 	margin: 0;
 	top: 100%;
+	min-width: 200px;
+	border-bottom: 3px solid #ff6d6d;
 }
 
 .user__icon:hover .user__menu{
@@ -103,10 +107,11 @@ label.toggle{
 
 .empty__li{
 	height: 23px;
+	border-bottom: 3px solid #ff6d6d;
 }
 
 .empty__li div{
-	right: 30px;
+	right: 14px;
 	position: relative;
 	color: #ff6d6d;
 	bottom: 3px;
@@ -128,6 +133,7 @@ label.toggle{
 
 .user__item a{
 	color: white;
+	font-size: 22px;
 }
 
 .user__item a:hover{
@@ -184,7 +190,7 @@ label.toggle{
 }
 
 .hero__info{
-	color:  rgba(40, 40, 40, 0.56);
+	color: rgba(40, 40, 40, 0.56);
 	font-size: 14px;
 	font-weight: 400;
 }
@@ -212,7 +218,7 @@ footer{
 	transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	-moz-transform: translateY(-50%)
+	-moz-transform: translateY(-50%);
 }
 
 .content__rubric{
@@ -271,6 +277,10 @@ footer{
 
 .content__center{
 	text-align: center;
+}
+
+.content__right{
+	text-align: right;
 }
 /*----- End Article Content-----*/
 
