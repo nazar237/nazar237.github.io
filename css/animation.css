@@ -52,6 +52,7 @@ input:hover{
 	overflow: hidden;
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center center;
 	cursor: auto;
 	transition: all 0.2s ease-in-out;
 }
