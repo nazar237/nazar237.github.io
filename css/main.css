@@ -427,6 +427,7 @@ footer{
 	height: 48px;
 	width: 278px;
 	color: #fff;
+	outline: none;
 }
 
 .try__input{
