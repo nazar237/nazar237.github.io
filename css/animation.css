@@ -10,85 +10,110 @@
 	transform: scaleX(0);
 	transition: all .3s ease;
 }
-
 .underline__anim:after{	
 	bottom: 50px;
 	background-color: #323969;
 	transform-origin: left;
 }
-
 .overline__anim:before{	
 	top: 50px;
 	background-color: #ff6d6d;
 	transform-origin: right;
 }
-
 .overline__anim:hover:before,
 .underline__anim:hover:after{
 	visibility: visible;
 	transform: scaleX(1);
 }
 
+.user__icon:hover .user__menu{
+	display: block;
+}
+
+.user__item a:hover{
+	color: #282828;
+}
+
+.user__item:hover{
+	background-color: rgba(246, 245, 243, 0.8);
+}
+
 .user__icon:hover .user__img_h1{
 	display: none;
 }
-
 .user__icon:hover .user__img_h2{
 	display: inline-block;
 }
 /*-----Header End------*/
-input{
-	transition: all 0.2s ease-in-out;
-}
-input:hover{
-	box-shadow:
-		inset 0 0 25px 5px rgba(0, 0, 0, 0.27),
-		0 1px 14px 11px rgba(0, 0, 0, 0);
-	transition: all 0.2s ease-in-out;
-}
-.social__icon{
-	width: 21px;
-	height: 21px;
-	overflow: hidden;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
-	cursor: auto;
-	transition: all 0.2s ease-in-out;
+
+/*-----Article Start------*/
+button:focus,
+input:focus,
+a:active{
+	outline: none;
 }
 
-.social__icon:hover{
+.hero__but__play:hover{
+	background-color: #ff6d6d;
+}
+.hero__but__play:active{
+	opacity: 1;
+	background-color: #ff6d6d;
+}
+
+.but__tn:hover,
+.try__button:hover{
+	color: rgba(50, 57, 105, 1);
+	font-weight: 600;
+}
+.but__tn:active,
+.try__button:active{
+	color: rgba(50, 57, 105, 0.56);
+	font-weight: 400;
+}
+/*-----Article End------*/
+
+/*-----Footer Start------*/
+.subscribe__input:hover,
+.try__input:hover{
+	background-color: transparent;
+}
+
+.subscribe__button:hover{
+	border: 3px solid rgba(50, 57, 105, 0.36);
 	transition: all 0.2s ease-in-out;
+}
+.subscribe__button:active{
+	border: 3px solid rgba(50, 57, 105, 1);
+}
+
+.social__icon,
+.social__icon:hover
+{
+	transition: all 0.3s ease-in-out;
 }
 
 .dribbble{
 	background-image: url(../images/dribbble-p.png);
 }
-
 .dribbble:hover{
 	background-image: url(../images/dribbble.png);
 }
-
 .fb{
 	background-image: url(../images/facebook-p.png);
 }
-
 .fb:hover{
 	background-image: url(../images/facebook.png);
 }
-
 .g_plus{
 	background-image: url(../images/googleplus-p.png);
 }
-
 .g_plus:hover{
 	background-image: url(../images/googleplus.png);
 }
-
 .twitter{
 	background-image: url(../images/twitter-p.png);
 }
-
 .twitter:hover{
 	background-image: url(../images/twitter.png);
 }

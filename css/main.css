@@ -101,10 +101,6 @@ label.toggle{
 	border-bottom: 3px solid #ff6d6d;
 }
 
-.user__icon:hover .user__menu{
-	display: block;
-}
-
 .empty__li{
 	height: 23px;
 	border-bottom: 3px solid #ff6d6d;
@@ -136,20 +132,11 @@ label.toggle{
 	font-size: 22px;
 }
 
-.user__item a:hover{
-	color: #282828;
-}
-
-.user__item:hover{
-	background-color: rgba(246, 245, 243, 0.2);
-}
-
 .line__h{
 	height: 0;
 	border-top: 1px solid white;
 	background-color: #323969;
 }
-
 /*-----Header End-----*/
 
 /*-----Hero Baner Start-----*/
@@ -187,6 +174,7 @@ label.toggle{
 	background-color:  #ff6d6d;
 	width: 190px;
 	height: 50px;
+	transition: all 0.1s ease-in-out;
 }
 
 .hero__info{
@@ -436,8 +424,7 @@ footer{
 }
 
 .try__input::placeholder{
-	color:  #fff;
-	opacity: 0.5;
+	color:  rgba(246, 245, 243, 0.5);
 }
 
 .try__button{
@@ -516,18 +503,20 @@ footer{
 
 .subscribe__input{
 	border-radius: 3px 0 0 3px;
-	border-width: 1px;
-	border-color: #4e4e5e;
-	border-style: solid;
+	border: 1px solid #4e4e5e;
 	background-color: rgba(141, 141, 141, 0.2);
+	color: rgba(0, 0, 0, 1);
 	opacity: 0.4;
 	width: 78%;
 	height: 46px;
 	padding-left: 20px;
+	font-weight: 500;
+	font-size: 18px;
+	transition: all 0.2s ease-in-out;
 }
 
 .subscribe__input::placeholder{
-	color:  rgba(0, 0, 0, 1);
+	color: rgba(0, 0, 0, 0.8);
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -535,15 +524,14 @@ footer{
 .subscribe__button{
 	position: relative;
 	border-radius: 3px;
-	border-width: 1px;
-	border-color: #ff6d6d;
-	border-style: solid;
+	border: 1px solid #ff6d6d;
 	background-color: #ff6d6d;
 	box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25);
 	padding: 0;
 	width: 48px;
 	height: 48px;
 	margin-left: -6px;
+	transition: all 0.2s ease-in-out;
 }
 
 .social__ul{
@@ -570,5 +558,16 @@ footer{
 
 .social__ul li:last-child{
 	margin-right: 0;
+}
+
+.social__icon{
+	width: 21px;
+	height: 21px;
+	overflow: hidden;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: auto;
+	transition: all 0.2s ease-in-out;
 }
 /*----- End footer-----*/
