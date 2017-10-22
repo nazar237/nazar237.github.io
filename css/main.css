@@ -10,6 +10,11 @@ header{
 	height: auto;
 	border-bottom: 3px solid #ff6d6d;
 	padding: 20px 0;
+	position: fixed;
+    transition: all .4s;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
 }
 
 .navigation{
@@ -571,3 +576,6 @@ footer{
 	transition: all 0.2s ease-in-out;
 }
 /*----- End footer-----*/
+.scrolled {
+	transform: translateY(-100%);
+}
