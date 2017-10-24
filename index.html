@@ -21,8 +21,9 @@
 					</a>
 				</div>
 				<div class="col-6 col-sm-6 col-md-6 col-lg-8 navigation">
-				<label for="toggle" class="toggle header__image">
-					<img id="nav__menu__img" class="nav__menu" src="images/menu.svg" alt="Menu" width="50" height="50">
+				<label for="toggle" class="toggle header__image" onclick="navMenu()">
+					<img id="nav_menu_open" class="nav__menu" src="images/menu.svg" alt="Menu" width="50" height="50">
+					<img id="nav_menu_close" class="nav__menu" src="images/menu-close.svg" alt="Menu" width="50" height="50">
 				</label>
 				<input type="checkbox" id="toggle" class="toggle">
 					<nav class="content__center header__nav">
@@ -391,6 +392,7 @@
 </body>
 
 <script src="js/slidingHeader.js"></script>
-<script src="js/bg_video.js"></script>
+<script src="js/bgVideo.js"></script>
+<script src="js/responsiveNavMenu.js"></script>
 
 </html>

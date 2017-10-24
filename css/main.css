@@ -83,6 +83,10 @@ label.toggle{
 	position: relative;	
 }
 
+#nav_menu_close{
+	display: none;
+}
+
 .user__icon{
 	text-align: right;
 	position: relative;
