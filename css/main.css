@@ -11,10 +11,10 @@ header{
 	border-bottom: 3px solid #ff6d6d;
 	padding: 20px 0;
 	position: fixed;
-    transition: all .4s;
-    z-index: 999;
-    background-color: white;
-    width: 100%;
+	transition: all .4s;
+	z-index: 999;
+	background-color: white;
+	width: 100%;
 }
 
 .navigation{
@@ -115,15 +115,15 @@ label.toggle{
 	right: 14px;
 	position: relative;
 	color: #ff6d6d;
-	bottom: 3px;
-	font-size: 22px;
+	bottom: 2px;
+	font-size: 21px;
 }
 
 .empty__li div div{
-	right: 5px;
+	right: 4px;
 	position: relative;
 	color: #323969;
-	bottom: 20px;
+	bottom: 19px;
 	font-size: 12px;
 }
 
@@ -146,9 +146,24 @@ label.toggle{
 
 /*-----Hero Baner Start-----*/
 .hero-baner{
-	background-image: url(../images/hero.jpg);
 	height: 819px;
+	padding-top: 101px;
 	border-bottom: 3px solid #ff6d6d;
+}
+
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+	background: url(../images/hero.jpg) no-repeat;
+	background-size: cover;
+	transition: 1s opacity;
 }
 
 .baner__text p{
@@ -161,10 +176,10 @@ label.toggle{
 .hero__but__play{
 	border:0;
 	border-radius: 50%;
-	background-image: url(../images/play-button.svg);
+	background-image: url(../images/pause-button.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
-	opacity: 0.56;
+	opacity: 0.5;
 	width: 59px;
 	height: 59px;
 }
@@ -195,8 +210,7 @@ label.toggle{
 .section2,
 .clients,
 .section3,
-.try-now,
-footer{
+.try-now{
 	margin: 0;
 	position: relative;
 	background-size: cover;
@@ -469,6 +483,11 @@ footer{
 	background-image: url(../images/footer.jpg);
 	height: auto;
 	padding: 3% 0;
+	margin: 0;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top right;
 }
 
 .f__margin{
@@ -529,14 +548,13 @@ footer{
 .subscribe__button{
 	position: relative;
 	border-radius: 3px;
-	border: 1px solid #ff6d6d;
+	border: 0;
 	background-color: #ff6d6d;
 	box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25);
 	padding: 0;
 	width: 48px;
 	height: 48px;
 	margin-left: -6px;
-	transition: all 0.2s ease-in-out;
 }
 
 .social__ul{
@@ -576,6 +594,11 @@ footer{
 	transition: all 0.2s ease-in-out;
 }
 /*----- End footer-----*/
+
 .scrolled {
 	transform: translateY(-100%);
+}
+
+.stopfade { 
+	opacity: .2;
 }

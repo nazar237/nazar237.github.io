@@ -22,7 +22,7 @@
 				</div>
 				<div class="col-6 col-sm-6 col-md-6 col-lg-8 navigation">
 				<label for="toggle" class="toggle header__image">
-					<img class="nav__menu" src="images/menu.svg" alt="Menu" width="50" height="50">
+					<img id="nav__menu__img" class="nav__menu" src="images/menu.svg" alt="Menu" width="50" height="50">
 				</label>
 				<input type="checkbox" id="toggle" class="toggle">
 					<nav class="content__center header__nav">
@@ -79,7 +79,10 @@
 
 	<article>
 		<section class="hero-baner">
-			<div class="container__content content__center">
+			<video poster="images/hero.jpg" id="bg__video" playsinline autoplay muted loop>
+				<source src="video/315536202.mp4" type="video/mp4">
+			</video>
+			<div class="container__content content__center" id="hero__video">
 				<h1 class="baner__text">
 					<p>There is no other</p>
 					<p>platforms for you as like</p>
@@ -388,5 +391,6 @@
 </body>
 
 <script src="js/slidingHeader.js"></script>
+<script src="js/bg_video.js"></script>
 
 </html>

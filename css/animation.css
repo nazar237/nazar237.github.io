@@ -11,12 +11,12 @@
 	transition: all .3s ease;
 }
 .underline__anim:after{	
-	bottom: 50px;
+	bottom: 40px;
 	background-color: #323969;
 	transform-origin: left;
 }
 .overline__anim:before{	
-	top: 50px;
+	top: 40px;
 	background-color: #ff6d6d;
 	transform-origin: right;
 }
@@ -49,12 +49,14 @@
 /*-----Article Start------*/
 button:focus,
 input:focus,
-a:active{
+a:active,
+a:visited{
 	outline: none;
 }
 
 .hero__but__play:hover{
 	background-color: #ff6d6d;
+	opacity: 0.75;
 }
 .hero__but__play:active{
 	opacity: 1;
@@ -80,11 +82,11 @@ a:active{
 }
 
 .subscribe__button:hover{
-	border: 3px solid rgba(50, 57, 105, 0.36);
+	background-color: rgba(89, 95, 133, 1);
 	transition: all 0.2s ease-in-out;
 }
 .subscribe__button:active{
-	border: 3px solid rgba(50, 57, 105, 1);
+	background-color: rgba(50, 57, 105, 1);
 }
 
 .social__icon,
