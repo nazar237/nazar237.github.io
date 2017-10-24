@@ -176,7 +176,7 @@ video {
 .hero__but__play{
 	border:0;
 	border-radius: 50%;
-	background-image: url(../images/pause-button.svg);
+	background-image: url(../images/pause-button.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	opacity: 0.5;

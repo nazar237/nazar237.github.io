@@ -22,7 +22,7 @@ pauseButton.addEventListener("click", function() {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
     vid.play();
-    pauseButton.style.backgroundImage = 'url(images/pause-button.svg)';
+    pauseButton.style.backgroundImage = 'url(images/pause-button.png)';
   } else {
     vid.pause();
     pauseButton.style.backgroundImage = 'url(images/play-button.svg)';
