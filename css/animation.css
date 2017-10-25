@@ -96,26 +96,32 @@ a:visited{
 }
 
 .dribbble{
-	background-image: url(../images/dribbble-p.png);
+	background-image: url(../images/dribbble-p.svg);
 }
 .dribbble:hover{
-	background-image: url(../images/dribbble.png);
+	background-image: url(../images/dribbble.svg);
 }
 .fb{
-	background-image: url(../images/facebook-p.png);
+	background-image: url(../images/facebook-p.svg);
 }
 .fb:hover{
-	background-image: url(../images/facebook.png);
+	background-image: url(../images/facebook.svg);
 }
 .g_plus{
-	background-image: url(../images/googleplus-p.png);
+	background-image: url(../images/googleplus-p.svg);
 }
 .g_plus:hover{
-	background-image: url(../images/googleplus.png);
+	background-image: url(../images/googleplus.svg);
 }
 .twitter{
-	background-image: url(../images/twitter-p.png);
+	background-image: url(../images/twitter-p.svg);
 }
 .twitter:hover{
-	background-image: url(../images/twitter.png);
+	background-image: url(../images/twitter.svg);
+}
+.github{
+	background-image: url(../images/github-p.svg);
+}
+.github:hover{
+	background-image: url(../images/github.svg);
 }
