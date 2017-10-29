@@ -11,12 +11,12 @@
 	transition: all .3s ease;
 }
 .underline__anim:after{	
-	bottom: 40px;
+	bottom: 45px;
 	background-color: #323969;
 	transform-origin: left;
 }
 .overline__anim:before{	
-	top: 40px;
+	top: 45px;
 	background-color: #ff6d6d;
 	transform-origin: right;
 }

@@ -80,6 +80,11 @@
 	.s1__container{
 		padding-right: 15%;
 	}
+	.baner__news{
+		background-image: url(../images/news-m.jpg);
+		background-size: contain;
+		background-position: center right;
+	}
 	.s3__img {
 		width: 90%;
 	}
@@ -101,7 +106,10 @@
 		font-size: 16px;
 	}
 	.subscribe__input {
-		width: 39%;
+		width: 50%;
+	}
+	.center__mobi{
+		text-align: center;
 	}
 }
 

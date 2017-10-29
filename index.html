@@ -3,6 +3,12 @@
 <head lang="en">
 	<title>Corporate Landing Page</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#323969">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#323969">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#323969">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
@@ -80,7 +86,9 @@
 
 	<article>
 		<section class="hero-baner">
-			<video poster="images/hero.jpg" id="bg__video" playsinline autoplay muted loop>
+			<video poster="images/hero.jpg" id="bg__video" playsinline autoplay muted loop preload>
+				<source src="https://01-lvl3-pdl.vimeocdn.com/01/2000/1/35003968/79960389.mp4?expires=1509226565&token=06be8b9f5e764923e50e7" type="video/mp4">
+				<source src="https://01-lvl3-pdl.vimeocdn.com/01/2000/1/35003968/79960267.mp4?expires=1509225910&token=0b1c2b17de43ec2e7499a" type="video/mp4">
 				<source src="video/315536202.mp4" type="video/mp4">
 			</video>
 			<div class="container__content content__center" id="hero__video">
@@ -351,7 +359,7 @@
 					</ul>
 				</div>
 				<div class="col-12 col-lg-4 f__margin">
-					<div class="f__ul">
+					<div class="f__ul center__mobi">
 						<p class="f__li">
 							<a class="f__subhead" href="#">Get Newsletter</a>
 						</p>

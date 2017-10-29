@@ -208,6 +208,7 @@ video {
 }
 /*-----Hero Baner End-----*/
 
+/*----- Start Article Content-----*/
 .hero-baner,
 .section1,
 .baner__news,
@@ -222,7 +223,6 @@ video {
 	background-position: center center;
 }
 
-/*----- Start Article Content-----*/
 .container__content{
 	position: relative;
 	top: 50%;
@@ -293,6 +293,10 @@ video {
 .content__right{
 	text-align: right;
 }
+
+button{
+	cursor: pointer;
+}
 /*----- End Article Content-----*/
 
 /*----- Start Article Sections-----*/
@@ -302,13 +306,15 @@ video {
 	padding: 10% 0;
 }
 
-.ban_news{
+.ban_news,
+.ban_news h3{
 	margin-top: 5%;
 }
 
 .baner__news{
-	background-color: #b6b6b6;
-	background-image: url(../images/baner.jpg);
+	background-color: #f6f5f3;
+	background-image: url(../images/news.jpg);
+	background-size: auto;
 	height: auto;
 	padding: 7% 0;
 }
