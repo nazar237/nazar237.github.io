@@ -41,7 +41,8 @@
 	input.toggle{
 		display: none;
 	}
-	input[type=checkbox]:checked ~ .header__nav,
+	input[type=checkbox]:checked ~ 
+	.header__nav,
 	label.toggle,
 	.header__li{
 		display: table-row;

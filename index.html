@@ -16,22 +16,28 @@
 	<link rel="shortcut icon" type="image/png" href="images/icon.png">
 </head>
 
-<body> 
+<body>
+
+	<div id="overlay">
+		<div id="progress"></div>
+		<div id="progstat"></div>
+		<div id="prellogo"></div>
+	</div>
 
 	<header>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-2 xs__logo">
 					<a href="#" class="header__image">
-						<img src="images/logo.png" alt="StartEx" width="103" height="47">
+						<img src="images/logo.svg" alt="StartEx" width="103" height="47">
 					</a>
 				</div>
 				<div class="col-6 col-sm-6 col-md-6 col-lg-8 navigation">
-				<label for="toggle" class="toggle header__image" onclick="navMenu()">
-					<img id="nav_menu_open" class="nav__menu" src="images/menu.svg" alt="Menu" width="50" height="50">
-					<img id="nav_menu_close" class="nav__menu" src="images/menu-close.svg" alt="Menu" width="50" height="50">
-				</label>
-				<input type="checkbox" id="toggle" class="toggle">
+					<label for="toggle" class="toggle header__image" onclick="navMenu()">
+						<img id="nav_menu_open" class="nav__menu" src="images/menu.svg" alt="Menu" width="50" height="50">
+						<img id="nav_menu_close" class="nav__menu" src="images/menu-close.svg" alt="Menu" width="50" height="50">
+					</label>
+					<input type="checkbox" id="toggle" class="toggle">
 					<nav class="content__center header__nav">
 						<ul class="header__ul">
 							<li class="header__li">
@@ -86,9 +92,7 @@
 
 	<article>
 		<section class="hero-baner">
-			<video poster="images/hero.jpg" id="bg__video" playsinline autoplay muted loop preload>
-				<source src="https://01-lvl3-pdl.vimeocdn.com/01/2000/1/35003968/79960389.mp4?expires=1509226565&token=06be8b9f5e764923e50e7" type="video/mp4">
-				<source src="https://01-lvl3-pdl.vimeocdn.com/01/2000/1/35003968/79960267.mp4?expires=1509225910&token=0b1c2b17de43ec2e7499a" type="video/mp4">
+			<video poster="images/hero.jpg" id="bg__video" playsinline muted="true" loop preload="auto">
 				<source src="video/315536202.mp4" type="video/mp4">
 			</video>
 			<div class="container__content content__center" id="hero__video">
@@ -103,6 +107,16 @@
 					<button class="but__tn">TRY NOW</button>
 				</p>
 				<p class="hero__info">* No neds to add cards details *</p>
+				<div id="video__buts">
+					<div class="mute__but" onclick="volume()">
+						<button class="hero__but__mute"></button>
+						<button class="hero__but__unmute"></button>
+					</div>
+					<div class="fullscr__but" onclick="fullScreen()">
+						<button class="hero__but__fullscreen"></button>
+						<button class="hero__but__minscreen"></button>
+					</div>
+				</div>
 			</div>
 		</section>
 		
@@ -181,7 +195,7 @@
 		<section class="section2">
 			<div class="row">
 				<div class="col-md-6 col-lg-6 content__center">
-					<img class="container__content macbook__img" src="images/macbook.png" alt="Macbook" width="630" height="367">
+					<img class="container__content macbook__img" src="images/macbook.svg" alt="Macbook" width="630" height="367">
 				</div>
 				<div class="col-md-5 col-lg-4">
 					<div class="container__content s2__container">
@@ -248,11 +262,11 @@
 					</div>
 				</div>
 				<div class="clients__icon content__center">
-					<img src="images/partner-logo-1.png">
-					<img src="images/partner-logo-2.png">
-					<img src="images/partner-logo-3.png">
-					<img src="images/partner-logo-4.png">
-					<img src="images/partner-logo-5.png">
+					<img src="images/partner-logo-1.svg" height="100px">
+					<img src="images/partner-logo-2.svg" width="130px">
+					<img src="images/partner-logo-3.svg" width="130px">
+					<img src="images/partner-logo-4.svg" width="130px">
+					<img src="images/partner-logo-5.svg" height="100px">
 				</div>
 			</div>
 		</section>
@@ -275,7 +289,7 @@
 				<div class="col-lg-2"></div>
 				<div class="col-lg-8">
 					<div class="s3__content content__center">
-						<img class="s3__img" src="images/safari.png" width="820" height="375">
+						<img class="s3__img" src="images/safari.svg" width="820" height="375">
 					</div>
 				</div>
 				<div class="col-lg-2"></div>
@@ -315,7 +329,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-4 f__margin">
-					<p><img src="images/logo.png" alt="Logotype" height="47"></p>
+					<p><img src="images/logo.svg" alt="Logotype" height="47"></p>
 					<p class="f__info">
 						Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
 					</p>
@@ -405,7 +419,8 @@
 </body>
 
 <script src="js/slidingHeader.js"></script>
-<script src="js/bgVideo.js"></script>
+<script src="js/bgHeroVideo.js"></script>
 <script src="js/responsiveNavMenu.js"></script>
+<script src="js/preloader.js"></script>
 
 </html>

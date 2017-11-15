@@ -49,18 +49,28 @@
 /*-----Article Start------*/
 button:focus,
 input:focus,
-a:active,
+a:focus,
 a:visited{
 	outline: none;
 }
 
-.hero__but__play:hover{
-	background-color: #ff6d6d;
-	opacity: 0.75;
-}
-.hero__but__play:active{
+.hero__but__play:hover,
+.hero__but__mute:hover,
+.hero__but__unmute:hover,
+.hero__but__fullscreen:hover,
+.hero__but__minscreen:hover{
+{
+	background-color: #ffffff;
 	opacity: 1;
-	background-color: #ff6d6d;
+}
+.hero__but__play:active,
+.hero__but__mute:active,
+.hero__but__unmute:active,
+.hero__but__fullscreen:active,
+.hero__but__minscreen:active{
+{
+	opacity: .75;
+	background-color: #ffffff;
 }
 
 .but__tn:hover,

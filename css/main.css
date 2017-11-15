@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500|Lato');
+@font-face {
+	font-family: Exo;
+	src: url(../fonts/Exo-Regular.ttf);
+}
+@font-face {
+	font-family: Lato;
+	src: url(../fonts/Lato-Regular.ttf);
+}
 
 body{
 	font-family: 'Exo', sans-serif;
 }
 
 /*-----Header Start-----*/
+
+#overlay{
+	overflow:hidden;
+}
 
 header{
 	height: auto;
@@ -177,15 +189,23 @@ video {
 	line-height: 75px;
 }
 
-.hero__but__play{
+.hero__but__play,
+.hero__but__mute,
+.hero__but__unmute,
+.hero__but__fullscreen,
+.hero__but__minscreen{
 	border:0;
 	border-radius: 50%;
-	background-image: url(../images/pause-button.svg);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
-	opacity: 0.5;
+	background-position: center center;
+	opacity: 1;
 	width: 59px;
 	height: 59px;
+}
+
+.hero__but__play{
+	background-image: url(../images/play-button.svg);
 }
 
 .but__tn{
@@ -199,6 +219,34 @@ video {
 	width: 190px;
 	height: 50px;
 	transition: all 0.1s ease-in-out;
+}
+
+#video__buts{
+	position: absolute;
+	right: 2%;
+	bottom: -45%;
+}
+
+.mute__but,
+.fullscr__but{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.hero__but__mute{
+	background-image: url(../images/mute-yes.svg);
+}
+.hero__but__unmute{
+	background-image: url(../images/mute-no.svg);
+	display: none;
+}
+
+.hero__but__fullscreen{
+	background-image: url(../images/fullscreen.svg);
+}
+.hero__but__minscreen{
+	background-image: url(../images/fullscreen-min.svg);
+	display: none;
 }
 
 .hero__info{
@@ -301,6 +349,7 @@ button{
 
 /*----- Start Article Sections-----*/
 .section1{
+	background-color: #fff;
 	background-image: url(../images/section1.jpg);
 	height: auto;
 	padding: 10% 0;
@@ -321,6 +370,7 @@ button{
 
 /*--------------*/
 .section2{
+	background-color: #fff;
 	background-image: url(../images/section2.jpg);
 	height: auto;
 	padding: 5% 0;
@@ -334,6 +384,7 @@ button{
 
 /*--------------*/
 .clients{
+	background-color: #22222a;
 	background-image: url(../images/background.jpg);
 	height: auto;
 	padding: 5% 0;
@@ -491,7 +542,7 @@ button{
 
 /*----- Start Footer-----*/
 footer{
-	background-color: white;
+	background-color: #fff;
 	background-image: url(../images/footer.jpg);
 	height: auto;
 	padding: 3% 0;
@@ -614,4 +665,50 @@ footer{
 
 .stopfade { 
 	opacity: .2;
+}
+
+#overlay{
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+	transition: 1s 0.4s;
+}
+
+#progress{
+	height: 2%;
+	width: 0;
+	background: #323969;
+	position: absolute;
+	top: 0;
+}
+
+#progstat{
+	font-size: 2em;
+	letter-spacing: 3px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	color: #323969;
+	transition: .4s .4s;
+}
+
+#prellogo{
+	opacity: 0;
+	position: absolute;
+	width: 40%;
+	height: 60%;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	background-image: url(../images/logo.svg);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: 1s .4s;
 }

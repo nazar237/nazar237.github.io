@@ -1,4 +1,3 @@
-
 function SlidingHeader(options) {
 	this.init(options);
 }

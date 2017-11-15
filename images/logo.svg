@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="365" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff8a8a;
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 27px;
+        font-family: Lato;
+      }
+
+      .cls-2 {
+        fill: #2c2f49;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  
+  
+  
+<g class="currentLayer" style=""><title>Layer 1</title><path id="Прямоугольник_1" data-name="Прямоугольник 1" class="cls-1" d="M519.839,0c26.375,0,57.145,19.842,101.52,46.6,99.906,60.233,108.806,69.469,147.573,93.191C780.6,149.322,800,157.13,800,184.749c0,20.75-51.055,54.736-116.5,94.825-44.526,27.274-100.048,64.884-132.039,77.66C537,363.006,524.989,365,518.233,365c-35.487,0-44.447-21.527-44.447-53.979V60.4C473.786,28.06,475.464,0,519.839,0Z"/><text id="Start" class="cls-2" transform="translate(0,244.1999969482422) scale(7.767000198364258,7.765999794006348) ">Start</text><text id="Ex" class="cls-3" transform="translate(483.5010070800781,243.12600708007812) scale(7.767000198364258,7.765999794006348) ">Ex</text></g></svg>
