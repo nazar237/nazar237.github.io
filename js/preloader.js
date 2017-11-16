@@ -24,11 +24,11 @@
 			
 			if (c===tot) {
 				stat.style.opacity = 0;
-				ress.style.opacity = 0;
+				//ress.style.opacity = 0;
 				
 				setTimeout(function() {
 					stat.style.display = "none";
-					ress.style.display = "none";
+					//ress.style.display = "none";
 				}, 1000);
 				
 				setTimeout(function(){
