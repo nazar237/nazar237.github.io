@@ -49,7 +49,6 @@ playPause.addEventListener("click", function() {
 });
 
 function volume(){
-
 	if(mute.style.display == "none") {
 		mute.style.display = "inline-block",
 		unmute.style.display = "none";
@@ -65,9 +64,31 @@ fullVideo.addEventListener("click", function() {
 
 	if (video.requestFullscreen) { // W3C API
 		video.requestFullscreen();
+		video.classList.remove("stopfade");
 	} else if (video.mozRequestFullScreen) { // Mozilla current API
 		video.mozRequestFullScreen();
+		video.classList.remove("stopfade");
 	} else if (video.webkitRequestFullScreen) { // Webkit current API
 		video.webkitRequestFullScreen();
+		video.classList.remove("stopfade");
+	} else if (video.msRequestFullscreen) {
+		video.msRequestFullscreen();
+		video.classList.remove("stopfade");
+	} else {
+		
+		if (video.exitFullscreen) {
+			video.exitFullscreen();
+			video.classList.add("stopfade");
+		} else if (video.mozCancelFullscreen) {
+			video.mozCancelFullscreen();
+			video.classList.add("stopfade");
+		} else if (video.webkitExitFullscreen) {
+			video.webkitExitFullscreen();
+			video.classList.add("stopfade");
+		} else if (video.msExitFullscreen) {
+			video.msExitFullscreen();
+			video.classList.add("stopfade");
+		}
 	}
-}, false);
+});
+//}, false);

@@ -57,8 +57,7 @@ a:visited{
 .hero__but__play:hover,
 .hero__but__mute:hover,
 .hero__but__unmute:hover,
-.hero__but__fullscreen:hover,
-.hero__but__minscreen:hover{
+.hero__but__fullscreen:hover{
 {
 	background-color: #ffffff;
 	opacity: 1;
@@ -66,8 +65,7 @@ a:visited{
 .hero__but__play:active,
 .hero__but__mute:active,
 .hero__but__unmute:active,
-.hero__but__fullscreen:active,
-.hero__but__minscreen:active{
+.hero__but__fullscreen:active{
 {
 	opacity: .75;
 	background-color: #ffffff;

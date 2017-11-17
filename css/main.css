@@ -192,8 +192,7 @@ video {
 .hero__but__play,
 .hero__but__mute,
 .hero__but__unmute,
-.hero__but__fullscreen,
-.hero__but__minscreen{
+.hero__but__fullscreen{
 	border:0;
 	border-radius: 50%;
 	background-size: cover;
@@ -244,10 +243,6 @@ video {
 
 .hero__but__fullscreen{
 	background-image: url(../images/fullscreen.svg);
-}
-.hero__but__minscreen{
-	background-image: url(../images/fullscreen-min.svg);
-	display: none;
 }
 
 .hero__info{
