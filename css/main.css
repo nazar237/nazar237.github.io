@@ -498,6 +498,7 @@ button{
 	width: 278px;
 	color: #fff;
 	outline: none;
+	transition: all 0.2s ease-in-out;
 }
 
 .try__input{
@@ -660,6 +661,58 @@ footer{
 }
 /*----- End footer-----*/
 
+/*----- Hover and Animation-----*/
+.subscribe__input:hover,
+.try__input:hover{
+	background-color: transparent;
+}
+
+.subscribe__button:hover{
+	background-color: rgba(89, 95, 133, 1);
+	transition: all 0.2s ease-in-out;
+}
+.subscribe__button:active{
+	background-color: rgba(50, 57, 105, 1);
+}
+
+.social__icon,
+.social__icon:hover
+{
+	transition: all 0.3s ease-in-out;
+}
+
+.dribbble{
+	background-image: url(../images/dribbble-p.svg);
+}
+.dribbble:hover{
+	background-image: url(../images/dribbble.svg);
+}
+.fb{
+	background-image: url(../images/facebook-p.svg);
+}
+.fb:hover{
+	background-image: url(../images/facebook.svg);
+}
+.g_plus{
+	background-image: url(../images/googleplus-p.svg);
+}
+.g_plus:hover{
+	background-image: url(../images/googleplus.svg);
+}
+.twitter{
+	background-image: url(../images/twitter-p.svg);
+}
+.twitter:hover{
+	background-image: url(../images/twitter.svg);
+}
+.github{
+	background-image: url(../images/github-p.svg);
+}
+.github:hover{
+	background-image: url(../images/github.svg);
+}
+
+/*----- Script -----*/
 .scrolled {
 	transform: translateY(-100%);
 }

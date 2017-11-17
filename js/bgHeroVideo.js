@@ -2,7 +2,7 @@ var video = document.getElementById("bg__video"),
 	playPause = document.querySelector("#hero__video .hero__but__play"),
 	mute = document.querySelector("#hero__video .hero__but__mute"),
 	unmute = document.querySelector("#hero__video .hero__but__unmute"),
-	fullscr = document.querySelector("#hero__video .hero__but__fullscreen");
+	fullVideo = document.querySelector("#hero__video .hero__but__fullscreen");
 
 if (window.matchMedia('(prefers-reduced-motion)').matches) {
 	video.removeAttribute("autoplay");
@@ -61,13 +61,13 @@ function volume(){
 	}
 }
 
-// function fullscr() { 
-// 	var elem = document.getElementById("myvideo");
-// 	if (elem.requestFullscreen) {
-// 	  elem.requestFullscreen();
-// 	} else if (elem.mozRequestFullScreen) {
-// 	  elem.mozRequestFullScreen();
-// 	} else if (elem.webkitRequestFullscreen) {
-// 	  elem.webkitRequestFullscreen();
-// 	}
-// }
+fullVideo.addEventListener("click", function() {
+
+	if (video.requestFullscreen) { // W3C API
+		video.requestFullscreen();
+	} else if (video.mozRequestFullScreen) { // Mozilla current API
+		video.mozRequestFullScreen();
+	} else if (video.webkitRequestFullScreen) { // Webkit current API
+		video.webkitRequestFullScreen();
+	}
+}, false);
