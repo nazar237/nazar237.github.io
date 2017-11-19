@@ -10,6 +10,7 @@
 
 body{
 	font-family: 'Exo', sans-serif;
+	overflow: hidden;
 }
 
 /*-----Header Start-----*/
@@ -19,7 +20,7 @@ body{
 }
 
 header{
-	height: auto;
+	height: 100px;
 	border-bottom: 3px solid #ff6d6d;
 	padding: 20px 0;
 	position: fixed;
@@ -162,8 +163,7 @@ label.toggle{
 
 /*-----Hero Baner Start-----*/
 .hero-baner{
-	height: 819px;
-	padding-top: 101px;
+	padding-top: 100px;
 	border-bottom: 3px solid #ff6d6d;
 }
 
@@ -177,9 +177,11 @@ video {
 	height: auto;
 	z-index: -100;
 	transform: translateX(-50%) translateY(-50%);
-	background: url(../images/hero.jpg) no-repeat;
-	background-size: cover;
 	transition: 1s opacity;
+}
+
+#hero__video{
+	margin: 5% 0;
 }
 
 .baner__text p{
@@ -198,7 +200,7 @@ video {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	opacity: .5;
+	opacity: .8;
 	width: 59px;
 	height: 59px;
 }
@@ -218,13 +220,6 @@ video {
 	width: 190px;
 	height: 50px;
 	transition: all 0.1s ease-in-out;
-}
-
-#video__buts{
-	position: relative;
-	bottom: -130px;
-	left: 0;
-	right: 0;
 }
 
 .mute__but,

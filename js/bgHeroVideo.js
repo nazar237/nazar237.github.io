@@ -21,6 +21,10 @@ var videoTextH = document.querySelector("#hero__video .baner__text"),
 	videoTextH.style.opacity = 0;
 	videoBut.style.opacity = 0;
 	videoTextP.style.opacity = 0;
+	playPause.style.opacity = .4;
+	fullVideo.style.opacity = .4;
+	mute.style.opacity = .4;
+	unmute.style.opacity = .4;
 }, 7000);
 
 video.addEventListener('ended', function(){
@@ -33,22 +37,30 @@ playPause.addEventListener("click", function() {
 	if (video.paused) {
 		video.play();
 		playPause.style.backgroundImage = 'url(images/pause-button.svg)';
-		video.classList.remove("stopfade");
+		video.classList.toggle("stopfade", false);
 		videoTextH.style.opacity = 0;
 		videoBut.style.opacity = 0;
 		videoTextP.style.opacity = 0;
 		window.clearTimeout (videoTimer);
+		playPause.style.opacity = .4;
+		fullVideo.style.opacity = .4;
+		mute.style.opacity = .4;
+		unmute.style.opacity = .4;
 	} else {
 		video.pause();
 		playPause.style.backgroundImage = 'url(images/play-button.svg)';
-		video.classList.add("stopfade");
+		video.classList.toggle("stopfade", true);
 		videoTextH.style.opacity = 1;
 		videoBut.style.opacity = 1;
 		videoTextP.style.opacity = 1;
+		playPause.style.opacity = .8;
+		fullVideo.style.opacity = .8;
+		mute.style.opacity = .8;
+		unmute.style.opacity = .8;
 	}
 });
 
-function volume(){
+function volume() {
 	if(mute.style.display == "none") {
 		mute.style.display = "inline-block",
 		unmute.style.display = "none";
@@ -62,33 +74,32 @@ function volume(){
 
 fullVideo.addEventListener("click", function() {
 
-	if (video.requestFullscreen) { // W3C API
+	if (video.requestFullscreen) {
 		video.requestFullscreen();
-		video.classList.remove("stopfade");
-	} else if (video.mozRequestFullScreen) { // Mozilla current API
+		video.classList.toggle("stopfade", false);
+	} else if (video.mozRequestFullScreen) {
 		video.mozRequestFullScreen();
-		video.classList.remove("stopfade");
-	} else if (video.webkitRequestFullScreen) { // Webkit current API
+		video.classList.toggle("stopfade", false);
+	} else if (video.webkitRequestFullScreen) {
 		video.webkitRequestFullScreen();
-		video.classList.remove("stopfade");
+		video.classList.toggle("stopfade", false);
 	} else if (video.msRequestFullscreen) {
 		video.msRequestFullscreen();
-		video.classList.remove("stopfade");
+		video.classList.toggle("stopfade", false);
 	} else {
 		
 		if (video.exitFullscreen) {
 			video.exitFullscreen();
-			video.classList.add("stopfade");
+			video.classList.toggle("stopfade", true);
 		} else if (video.mozCancelFullscreen) {
 			video.mozCancelFullscreen();
-			video.classList.add("stopfade");
+			video.classList.toggle("stopfade", true);
 		} else if (video.webkitExitFullscreen) {
-			video.webkitExitFullscreen();
-			video.classList.add("stopfade");
+			video.webkitCancelFullScreen();
+			video.classList.toggle("stopfade", true);
 		} else if (video.msExitFullscreen) {
 			video.msExitFullscreen();
-			video.classList.add("stopfade");
+			video.classList.toggle("stopfade", true);
 		}
 	}
 });
-//}, false);
