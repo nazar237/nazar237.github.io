@@ -115,8 +115,11 @@
 }
 
 @media screen and (max-width: 767px){
+	#hero__video{
+		margin: 100px 0;
+	}
 	.user__icon{
-		right: -30px;
+		right: -35px;
 	}
 	.hero-baner{
 		padding: 0 15%;
