@@ -4,20 +4,14 @@ var video = document.getElementById("bg__video"),
 	unmute = document.querySelector("#hero__video .hero__but__unmute"),
 	fullVideo = document.querySelector("#hero__video .hero__but__fullscreen");
 
-//change wideo by device
+//change video by device
 window.onload = function changeVideo() {
 
 	if (window.matchMedia("(min-width: 992px)").matches) {
 		video.src = "video/315536202_1280.mp4";
 		//video.setAttribute("src", "video/315536202_1280.mp4");
 		video.load();
-	} else 
-	if (window.matchMedia("(max-width: 991px)").matches) {
-		video.src = "video/315536202_640.mp4";
-		//video.setAttribute("src", "video/315536202_640.mp4");
-		video.load();
-	} else 
-	if (window.matchMedia("(max-width: 767px)").matches) {
+	} else {
 		video.src = "video/315536202_426.mp4";
 		//video.setAttribute("src", "video/315536202_320.mp4");
 		video.load();
@@ -31,7 +25,7 @@ if (window.matchMedia('(prefers-reduced-motion)').matches) {
 	playPause.style.backgroundImage = 'url(images/play-button.svg)';
 }
 
-//autopplay timer
+//autoplay timer
 window.addEventListener("load", videoTimer);
 
 var videoTextH = document.querySelector("#hero__video .baner__text"),

@@ -6,7 +6,7 @@
 
 	function loadbar() {
 		
-		var ovrl = id("overlay"), //background
+		var ovrl = id("overlay"), //preload container
 			stat = id("progstat"), //percent progress
 			ress = id("progress"), //loading progress
 			logo = id("prellogo"),

@@ -8,19 +8,26 @@
 	src: url(../fonts/Neon-Regular.ttf);
 }
 
+html {
+	width: 100%; 
+	overflow-x: hidden;
+}
+
 body {
+	margin: 0;
+	padding: 0;
 	background-color: #111111;
 	background-image: url(../images/wall-textur.jpg);
 }
 
-div {
-	padding: 100px 0;
-	font-size: 9em;
+#err404 {
+	padding: 50px 0;
+	font-size: 7em;
 	text-align: center;
 }
 
-div p {
-	margin:0;
+#err404 p {
+	margin: 0;
 }
 
 #error {
@@ -74,6 +81,25 @@ div p {
 	}
 }
 
-h2 {
-	font-family: 'Courier Regular';
+.pnf {
+	position: fixed;
+	height: 30px;
+	width: 150%;
+	bottom: 25%;
+	background-color: #cece14;
+	background-image: url(../images/error.png);
+	background-size: contain;
+	-webkit-box-shadow: -10px 0px 25px 5px rgba(0,0,0,0.45);
+	-moz-box-shadow: -10px 0px 25px 5px rgba(0,0,0,0.45);
+	box-shadow: -10px 0px 25px 5px rgba(0,0,0,0.45);
+}
+
+.pnf1 {
+	transform: rotate(5deg);
+	left: -50px;
+}
+
+.pnf2 {
+	transform: rotate(-8deg);
+	left: -15px;
 }
