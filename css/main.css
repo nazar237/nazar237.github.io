@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500|Lato');
-@font-face {
-	font-family: Exo;
-	src: url(../fonts/Exo-Regular.ttf);
-}
-@font-face {
-	font-family: Lato;
-	src: url(../fonts/Lato-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=Exo:100,400,400i,500');
 
 body{
 	font-family: 'Exo', sans-serif;
@@ -92,10 +84,6 @@ label.toggle{
 	margin: 0;
 	position: relative;	
 }
-/*
-#nav_menu_close{
-	display: none;
-}*/
 
 .user__icon{
 	text-align: right;
@@ -194,12 +182,14 @@ video {
 .hero__but__fullscreen{
 	border:0;
 	border-radius: 50%;
+	background-color: #fff;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	opacity: .8;
 	width: 59px;
 	height: 59px;
+	transition: all 0.1s ease-in-out;
 }
 
 .hero__but__play{
@@ -493,12 +483,12 @@ button{
 	background-color: rgba(246, 245, 243, 0.2);
 }
 
-.try__input::placeholder{
+.try__input:placeholder{
 	color:  rgba(246, 245, 243, 0.5);
 }
 
 .try__button{
-	border-color: #ff6d6d;
+	border: 0;
 	background-color: #ff6d6d;
 	box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, 0.25);
 }
@@ -591,7 +581,7 @@ footer{
 	transition: all 0.2s ease-in-out;
 }
 
-.subscribe__input::placeholder{
+.subscribe__input:placeholder{
 	color: rgba(0, 0, 0, 0.8);
 	font-size: 16px;
 	font-weight: 400;

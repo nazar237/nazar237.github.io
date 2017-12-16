@@ -12,7 +12,7 @@ window.onload = function changeVideo() {
 		//video.setAttribute("src", "video/315536202_1280.mp4");
 		video.load();
 	} else {
-		video.src = "video/315536202_426.mp4";
+		video.src = "video/315536202_480.mp4";
 		//video.setAttribute("src", "video/315536202_320.mp4");
 		video.load();
 	}
@@ -73,10 +73,10 @@ playPause.addEventListener("click", function() {
 		videoTextH.style.opacity = 1;
 		videoBut.style.opacity = 1;
 		videoTextP.style.opacity = 1;
-		playPause.style.opacity = .8;
-		fullVideo.style.opacity = .8;
-		mute.style.opacity = .8;
-		unmute.style.opacity = .8;
+		playPause.style.opacity = 1;
+		fullVideo.style.opacity = 1;
+		mute.style.opacity = 1;
+		unmute.style.opacity = 1;
 	}
 });
 
