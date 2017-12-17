@@ -12,7 +12,7 @@ window.onload = function changeVideo() {
 		//video.setAttribute("src", "video/315536202_1280.mp4");
 		video.load();
 	} else {
-		video.src = "video/315536202_480.mp4";
+		video.src = "video/315536202_270.mp4";
 		//video.setAttribute("src", "video/315536202_320.mp4");
 		video.load();
 	}
