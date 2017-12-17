@@ -33,22 +33,22 @@ var videoTextH = document.querySelector("#hero__video .baner__text"),
 	videoTextP = document.querySelector("#hero__video .hero__info"),
 	
 	videoTimer = window.setTimeout(function() {
-	video.play();
-	playPause.style.backgroundImage = 'url(images/pause-button.svg)';
-	video.classList.remove("stopfade");
-	videoTextH.style.opacity = 0;
-	videoBut.style.opacity = 0;
-	videoTextP.style.opacity = 0;
-	playPause.style.opacity = .4;
-	fullVideo.style.opacity = .4;
-	mute.style.opacity = .4;
-	unmute.style.opacity = .4;
-}, 7000);
+		video.play();
+		playPause.style.backgroundImage = 'url(images/pause-button.svg)';
+		video.classList.toggle("stopfade", false);
+		videoTextH.style.opacity = 0;
+		videoBut.style.opacity = 0;
+		videoTextP.style.opacity = 0;
+		playPause.style.opacity = .4;
+		fullVideo.style.opacity = .4;
+		mute.style.opacity = .4;
+		unmute.style.opacity = .4;
+	}, 7000);
 
 //opacity for ended video
 video.addEventListener('ended', function() {
 	video.pause();
-	video.classList.add("stopfade");
+	video.classList.toggle("stopfade", true);
 });
 
 //playPause button
