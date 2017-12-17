@@ -20,7 +20,7 @@ header{
 
 .navigation{
 	left: 1.5em;
-		transition: all .4s;
+	transition: all .4s;
 }
 
 .header__nav,
@@ -63,6 +63,11 @@ header{
 	display: inline-block;
 	position: relative;
 	text-align: left;
+}
+
+.header__li:active{
+	background-color: #dedede78;
+	border-radius: 5px;
 }
 
 .header__li a{
@@ -119,14 +124,6 @@ label.toggle{
 	color: #ff6d6d;
 	bottom: 2px;
 	font-size: 21px;
-}
-
-.empty__li div div{
-	right: 4px;
-	position: relative;
-	color: #323969;
-	bottom: 19px;
-	font-size: 12px;
 }
 
 .user__item{
@@ -483,8 +480,9 @@ button{
 	background-color: rgba(246, 245, 243, 0.2);
 }
 
-.try__input:placeholder{
+.try__input::placeholder{
 	color:  rgba(246, 245, 243, 0.5);
+	background-color: transparent;
 }
 
 .try__button{
@@ -514,8 +512,9 @@ button{
 	line-height: 75px;
 }
 
-.try__text span{
-	text-decoration: underline;
+.try__text a{
+	text-decoration: underline !important;
+	cursor: pointer;
 }
 /*----- End Article Sections-----*/
 
@@ -581,7 +580,7 @@ footer{
 	transition: all 0.2s ease-in-out;
 }
 
-.subscribe__input:placeholder{
+.subscribe__input::placeholder{
 	color: rgba(0, 0, 0, 0.8);
 	font-size: 16px;
 	font-weight: 400;
@@ -619,7 +618,9 @@ footer{
 .social__ul li{
 	display: inline-block;
 	position: relative;
-	margin-right: 10%;
+	margin-right: 8%;
+	border-radius: 3px;
+	transition: all 0.3s ease-in-out;
 }
 
 .social__ul li:last-child{
@@ -633,61 +634,11 @@ footer{
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
+	margin: 5px;
 	cursor: auto;
-	transition: all 0.2s ease-in-out;
-}
-/*----- End footer-----*/
-
-/*----- Hover and Animation-----*/
-.subscribe__input:hover,
-.try__input:hover{
-	background-color: transparent;
-}
-
-.subscribe__button:hover{
-	background-color: rgba(89, 95, 133, 1);
-	transition: all 0.2s ease-in-out;
-}
-.subscribe__button:active{
-	background-color: rgba(50, 57, 105, 1);
-}
-
-.social__icon,
-.social__icon:hover
-{
 	transition: all 0.3s ease-in-out;
 }
-
-.dribbble{
-	background-image: url(../images/dribbble-p.svg);
-}
-.dribbble:hover{
-	background-image: url(../images/dribbble.svg);
-}
-.fb{
-	background-image: url(../images/facebook-p.svg);
-}
-.fb:hover{
-	background-image: url(../images/facebook.svg);
-}
-.g_plus{
-	background-image: url(../images/googleplus-p.svg);
-}
-.g_plus:hover{
-	background-image: url(../images/googleplus.svg);
-}
-.twitter{
-	background-image: url(../images/twitter-p.svg);
-}
-.twitter:hover{
-	background-image: url(../images/twitter.svg);
-}
-.github{
-	background-image: url(../images/github-p.svg);
-}
-.github:hover{
-	background-image: url(../images/github.svg);
-}
+/*----- End footer-----*/
 
 /*----- Script -----*/
 .scrolled {
