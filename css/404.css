@@ -85,7 +85,7 @@ body {
 	position: fixed;
 	height: 30px;
 	width: 150%;
-	bottom: 25%;
+	bottom: 100px;
 	background-color: #cece14;
 	background-image: url(../images/error.png);
 	background-size: contain;
@@ -102,4 +102,14 @@ body {
 .pnf2 {
 	transform: rotate(-8deg);
 	left: -15px;
+}
+
+@media screen and (max-width: 575px){
+	#err404 {
+		font-size: 7em;
+	}
+
+	.pnf{
+		bottom: 50px;
+	}
 }

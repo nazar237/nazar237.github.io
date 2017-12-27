@@ -60,6 +60,7 @@ a:visited{
 .hero__but__fullscreen:hover{
 	box-shadow: 0px 0px 25px 5px #323969;
 	transition: all 0.1s ease-in-out;
+	opacity: 1 !important;
 }
 .hero__but__play:active,
 .hero__but__mute:active,
