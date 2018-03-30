@@ -29,20 +29,16 @@
 .user__icon:hover .user__menu{
 	display: block;
 }
-
-.user__item a:hover{
-	color: #282828;
-}
-
-.user__item:hover{
-	background-color: rgba(246, 245, 243, 0.8);
-}
-
 .user__icon:hover .user__img_h1{
 	display: none;
 }
 .user__icon:hover .user__img_h2{
 	display: inline-block;
+}
+
+.user__item:hover{
+	background-color: rgba(246, 245, 243, 0.2);
+	/*background-color: rgba(50, 57, 105, 0.7);*/
 }
 /*-----Header End------*/
 
@@ -86,8 +82,7 @@ a:visited{
 }
 
 .social__ul li:hover{
-	background-color: #dedede;
-	transition: all 0.3s ease-in-out;
+	transform: scale(2.5);
 }
 
 .dribbble{

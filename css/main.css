@@ -111,11 +111,13 @@ label.toggle{
 	top: 100%;
 	min-width: 200px;
 	border-bottom: 3px solid #ff6d6d;
+	background-color: rgba(50, 57, 105, 1);
 }
 
 .empty__li{
 	height: 23px;
 	border-bottom: 3px solid #ff6d6d;
+	background-color: #fff;
 }
 
 .empty__li div{
@@ -127,19 +129,12 @@ label.toggle{
 }
 
 .user__item{
-	background-color: #323969;
 	padding: 10px 20px;
 }
 
 .user__item a{
-	color: white;
+	color: #fff;
 	font-size: 22px;
-}
-
-.line__h{
-	height: 0;
-	border-top: 1px solid white;
-	background-color: #323969;
 }
 /*-----Header End-----*/
 
@@ -393,7 +388,7 @@ button{
 }
 .s3__content{
 	position: relative;
-	height: 373px;
+	height: 375px;
 }
 
 .s3{
@@ -621,11 +616,15 @@ footer{
 	position: relative;
 	margin-right: 8%;
 	border-radius: 3px;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s;
 }
 
 .social__ul li:last-child{
 	margin-right: 0;
+}
+
+.social__ul div{
+	cursor: pointer;
 }
 
 .social__icon{
@@ -648,6 +647,19 @@ footer{
 
 .stopfade { 
 	opacity: .2;
+}
+
+#bg__video:fullscreen{
+	opacity: 1;
+}
+#bg__video:-webkit-full-screen{
+	opacity: 1;
+}
+#bg__video:-moz-full-screen{
+	opacity: 1;
+}
+#bg__video:-ms-fullscreen{
+	opacity: 1;
 }
 
 #overlay{
@@ -694,4 +706,12 @@ footer{
 	background-size: contain;
 	background-repeat: no-repeat;
 	transition: 1s .4s;
+}
+
+.hidePerloader{
+	display: none;
+}
+
+.body{
+	overflow: visible;
 }

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112797800-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-112797800-1');
+	</script>
+	<!--/Global site tag (gtag.js) - Google Analytics/-->
 	<title>Corporate Landing Page</title>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Chrome, Firefox OS and Opera -->
@@ -17,9 +27,9 @@
 	<script src="js/preloader.js"></script>
 </head>
 
-<body>
+<body class="body">
 
-	<div id="overlay">
+	<div id="overlay" class="hidePerloader">
 		<div id="progress"></div>
 		<div id="progstat"></div>
 		<div id="prellogo"></div>
@@ -29,7 +39,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-12 col-lg-2 xs__logo">
-					<a href="#" class="header__image">
+					<a name="home" class="header__image">
 						<img src="images/logo.svg" alt="StartEx" width="103" height="47">
 					</a>
 				</div>
@@ -46,19 +56,19 @@
 					<nav class="content__center header__nav">
 						<ul class="header__ul">
 							<li class="header__li">
-								<a href="#" class="underline__anim overline__anim">Home</a>
+								<a href="#home" class="underline__anim overline__anim">Home</a>
 							</li>
 							<li class="header__li">
-								<a href="#" class="underline__anim overline__anim">News</a>
+								<a href="#trial" class="underline__anim overline__anim">Trial</a>
 							</li>
 							<li class="header__li">
-								<a href="#" class="underline__anim overline__anim">Support</a>
+								<a href="#news" class="underline__anim overline__anim">News</a>
 							</li>
 							<li class="header__li">
-								<a href="#" class="underline__anim overline__anim">About us</a>
+								<a href="#about" class="underline__anim overline__anim">About us</a>
 							</li>
 							<li class="header__li">
-								<a href="#" class="underline__anim overline__anim">Contacts</a>
+								<a href="#contacts" class="underline__anim overline__anim">Contacts</a>
 							</li>
 						</ul>
 					</nav>
@@ -79,7 +89,6 @@
 							<li class="user__item">
 								<a href="#">Settings</a>
 							</li>
-							<li class="line__h"></li>
 							<li class="user__item">
 								<a href="#">About</a>
 							</li>
@@ -94,7 +103,7 @@
 	</header>
 
 	<article>
-		<section class="hero-baner">
+		<section class="hero-baner" id="home">
 			<video class="stopfade" poster="images/hero.jpg" id="bg__video" playsinline muted="true" loop preload="auto" src="video/315536202_1280.mp4"></video>
 			<div class="content__center" id="hero__video">
 				<h1 class="baner__text">
@@ -129,7 +138,7 @@
 						</h3>
 						<h2 class="content__heading">
 							There is no other platforms for you as like
-							<a href="#" class="content__link">....</a>
+							<span class="content__link">....</span>
 						</h2>
 						<p class="content__text">
 							Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper.
@@ -142,7 +151,35 @@
 			</div>
 		</section>
 
-		<section class="baner__news">
+		<section class="try" id="trial">
+			<div class="content__center">
+				<div class="container">
+					<p class="content__rubric">NEW FEATURES</p>
+					<p class="try__heading">Over 100000 designers are using</p>
+					<form class="contact__form" action="#" method="post" name="contact__form">
+						<ul class="contact__ul">
+							<li>
+								<input class="try__input" type="text" placeholder="FULL NAME" name="fullname" required>
+							</li>
+							<li>
+								<input class="try__input" type="email" placeholder="YOUR EMAIL" name="email" required>
+							</li>
+							<li>
+								<input class="try__input" type="password" placeholder="PASSWORD" name="psw" required>
+							</li>
+							<li class="trial__30">
+								<img src="images/arrow.png" width="17" alt="arrow">
+								<h2 class="try__text">30 days free trial for all.</h2>
+								<button class="try__button" type="submit">TRY NOW</button>
+							</li>
+						</ul>
+					</form>
+					<p class="try__text">By Signing up you agree to our <a href="#">Terms &amp; Services.</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section class="baner__news" id="news">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -204,7 +241,7 @@
 						</p>
 						<p class="content__heading">
 							Resposive design, just need your tap
-							<a href="#" class="content__link">....</a>
+							<span class="content__link">....</span>
 						</p>
 						<p class="content__text">
 							Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod semper.
@@ -215,7 +252,32 @@
 			</div>
 		</section>
 
-		<section class="clients">
+		<section class="section3">
+			<div class="row">
+				<div class="col-lg-3"></div>
+				<div class="col-lg-6">
+					<div>
+						<div class="s3">
+							<p class="content__rubric content__center try__rubric">NEW FEATURES</p>
+							<p class="content__heading content__center">Some awesone features</p>
+							<p class="content__text content__center">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod semper.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-8">
+					<div class="s3__content content__center">
+						<img class="s3__img" src="images/safari.svg" width="820" height="375" alt="Safari Browser">
+					</div>
+				</div>
+				<div class="col-lg-2"></div>
+			</div>
+		</section>
+
+		<section class="clients" id="about">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4">
@@ -270,62 +332,9 @@
 				</div>
 			</div>
 		</section>
-
-		<section class="section3">
-			<div class="row">
-				<div class="col-lg-3"></div>
-				<div class="col-lg-6">
-					<div class="s3__content">
-						<div class="s3">
-							<p class="content__rubric content__center try__rubric">NEW FEATURES</p>
-							<p class="content__heading content__center">Some awesone features</p>
-							<p class="content__text content__center">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Etiasem malesuada magn. Vestibulum felis euismod semper.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-3"></div>
-			</div>
-			<div class="row">
-				<div class="col-lg-2"></div>
-				<div class="col-lg-8">
-					<div class="s3__content content__center">
-						<img class="s3__img" src="images/safari.svg" width="820" height="375" alt="Safari Browser">
-					</div>
-				</div>
-				<div class="col-lg-2"></div>
-			</div>
-		</section>
-
-		<section class="try">
-			<div class="content__center">
-				<div class="container">
-					<p class="content__rubric">NEW FEATURES</p>
-					<p class="try__heading">Over 100000 designers are using ...</p>
-					<form class="contact__form" action="#" method="post" name="contact__form">
-						<ul class="contact__ul">
-							<li>
-								<input class="try__input" type="text" placeholder="FULL NAME" name="fullname" required>
-							</li>
-							<li>
-								<input class="try__input" type="email" placeholder="YOUR EMAIL" name="email" required>
-							</li>
-							<li>
-								<input class="try__input" type="password" placeholder="PASSWORD" name="psw" required>
-							</li>
-							<li class="trial__30">
-								<img src="images/arrow.png" width="17" alt="arrow">
-								<h2 class="try__text">30 days free trial for all.</h2>
-								<button class="try__button" type="submit">TRY NOW</button>
-							</li>
-						</ul>
-					</form>
-					<p class="try__text">By Signing up you agree to our <a href="#">Terms &amp; Services.</a></p>
-				</div>
-			</div>
-		</section>
 	</article>
 
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-6 col-lg-4 f__margin">

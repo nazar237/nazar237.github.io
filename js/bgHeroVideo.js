@@ -5,7 +5,7 @@ var video = document.getElementById("bg__video"),
 	fullVideo = document.querySelector("#hero__video .hero__but__fullscreen");
 
 //change video by device
-window.onload = function changeVideo() {
+window.onload = function() {
 
 	if (window.matchMedia("(min-width: 992px)").matches) {
 		video.src = "video/315536202_1280.mp4";
@@ -49,7 +49,7 @@ var videoTextH = document.querySelector("#hero__video .baner__text"),
 video.addEventListener('ended', function() {
 	video.pause();
 	video.classList.toggle("stopfade", true);
-});
+}, false);
 
 //playPause button
 playPause.addEventListener("click", function() {
@@ -78,7 +78,7 @@ playPause.addEventListener("click", function() {
 		mute.style.opacity = 1;
 		unmute.style.opacity = 1;
 	}
-});
+}, false);
 
 //volume button
 document.querySelector("#video__buts .mute__but").addEventListener("click", volume);
@@ -98,67 +98,126 @@ function volume() {
 //fullscreen button
 fullVideo.addEventListener("click", function() {
 
+	if (video.webkitRequestFullScreen) {
+		video.webkitRequestFullScreen();
+
+		if (video.webkitRequestFullScreen) {
+			video.classList.toggle("stopfade", false);
+		}
+
+		video.addEventListener("webkitfullscreenchange", function() {
+			if (video.webkitExitFullscreen) {
+				if (video.paused) {
+					video.classList.toggle("stopfade", true);
+					playPause.style.backgroundImage = 'url(images/play-button.svg)';
+					videoTextH.style.opacity = 1;
+					videoBut.style.opacity = 1;
+					videoTextP.style.opacity = 1;
+					playPause.style.opacity = 1;
+					fullVideo.style.opacity = 1;
+					mute.style.opacity = 1;
+					unmute.style.opacity = 1;
+				} else {
+					video.classList.toggle("stopfade", false);
+					playPause.style.backgroundImage = 'url(images/pause-button.svg)';
+				}
+			}
+		}, false);
+	} else
+
+	if (video.mozRequestFullScreen) {
+		video.mozRequestFullScreen();
+
+		if (video.mozRequestFullScreen) {
+			video.classList.toggle("stopfade", false);
+		}
+
+		video.addEventListener("mozfullscreenchange", function() {
+			if (video.mozCancelFullscreen) {
+				if (video.paused) {
+					video.classList.toggle("stopfade", true);
+					playPause.style.backgroundImage = 'url(images/play-button.svg)';
+					videoTextH.style.opacity = 1;
+					videoBut.style.opacity = 1;
+					videoTextP.style.opacity = 1;
+					playPause.style.opacity = 1;
+					fullVideo.style.opacity = 1;
+					mute.style.opacity = 1;
+					unmute.style.opacity = 1;
+				} else {
+					video.classList.toggle("stopfade", false);
+					playPause.style.backgroundImage = 'url(images/pause-button.svg)';
+				}
+			}
+		}, false);
+	} else
+
+	if (video.msRequestFullscreen) {
+		video.msRequestFullscreen();
+
+		if (video.msRequestFullscreen) {
+			video.classList.toggle("stopfade", false);
+		}
+
+		video.addEventListener("msfullscreenchange", function() {
+			if (video.msExitFullscreen) {
+				if (video.paused) {
+					video.classList.toggle("stopfade", true);
+					playPause.style.backgroundImage = 'url(images/play-button.svg)';
+					videoTextH.style.opacity = 1;
+					videoBut.style.opacity = 1;
+					videoTextP.style.opacity = 1;
+					playPause.style.opacity = 1;
+					fullVideo.style.opacity = 1;
+					mute.style.opacity = 1;
+					unmute.style.opacity = 1;
+				} else {
+					video.classList.toggle("stopfade", false);
+					playPause.style.backgroundImage = 'url(images/pause-button.svg)';
+				}
+			}
+		}, false);
+	} else
+
 	if (video.requestFullscreen) {
 		video.requestFullscreen();
-		video.classList.toggle("stopfade", false);
-	} else if (video.mozRequestFullScreen) {
-		video.mozRequestFullScreen();
-		video.classList.toggle("stopfade", false);
-	} else if (video.webkitRequestFullScreen) {
-		video.webkitRequestFullScreen();
-		video.classList.toggle("stopfade", false);
-	} else if (video.msRequestFullscreen) {
-		video.msRequestFullscreen();
-		video.classList.toggle("stopfade", false);
+
+		if (video.requestFullscreen) {
+			video.classList.toggle("stopfade", false);
+		}
+
+		video.addEventListener("fullscreenchange", function() {
+			if (video.ExitFullscreen) {
+				if (video.paused) {
+					video.classList.toggle("stopfade", true);
+					playPause.style.backgroundImage = 'url(images/play-button.svg)';
+					videoTextH.style.opacity = 1;
+					videoBut.style.opacity = 1;
+					videoTextP.style.opacity = 1;
+					playPause.style.opacity = 1;
+					fullVideo.style.opacity = 1;
+					mute.style.opacity = 1;
+					unmute.style.opacity = 1;
+				} else {
+					video.classList.toggle("stopfade", false);
+					playPause.style.backgroundImage = 'url(images/pause-button.svg)';
+				}
+			}
+		}, false);
 	}
-});
 
-video.addEventListener("webkitfullscreenchange", function() {
+}, false);
 
-	if (video.ExitFullscreen) {
-		if (video.paused) {
-			video.classList.toggle("stopfade", true);
-		} else {
-			video.classList.toggle("stopfade", false);
-		}
-	} else if (video.mozCancelFullscreen) {
-		if (video.paused) {
-			video.classList.toggle("stopfade", true);
-		} else {
-			video.classList.toggle("stopfade", false);
-		}
-	} else if (video.webkitExitFullscreen) {
-		if (video.paused) {
-			video.classList.toggle("stopfade", true);
-		} else {
-			video.classList.toggle("stopfade", false);
-		}
-	} else if (video.msExitFullscreen) {
-		if (video.paused) {
-			video.classList.toggle("stopfade", true);
-		} else {
-			video.classList.toggle("stopfade", false);
-		}
-	}
-});
-
-	// else if (video.ExitFullscreen) {
-	// 	video.ExitFullscreen();
-	// 	video.classList.toggle("stopfade", true);
-	// } else if (video.mozCancelFullscreen) {
-	// 	video.mozCancelFullscreen();
-	// 	video.classList.toggle("stopfade", true);
-	// } else if (video.webkitExitFullscreen) {
-	// 	video.webkitExitFullscreen();
-	// 	video.classList.toggle("stopfade", true);
-	// } else if (video.msExitFullscreen) {
-	// 	video.msExitFullscreen();
-	// 	video.classList.toggle("stopfade", true);
-	// 	//video.setAttribute("opacity", "0.2");
-	// }
-
-	// if (video.paused) {
-	// 		video.classList.toggle("stopfade", true);
-	// 	} else {
-	// 		video.classList.toggle("stopfade", false);
-	// 	}
+//play-pause video on fullscreen for space button
+// document.addEventListener("keydown", function(e) {
+	
+// 	if (video.webkitRequestFullScreen) {
+// 		if (e.keyCode == 32) {
+// 			if (video.paused) {
+// 				video.play();
+// 			} else {
+// 				video.pause();
+// 			}
+// 		}
+// 	}
+// }, false);
